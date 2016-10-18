@@ -2,27 +2,34 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <div class="container" align="center">
-        <h2> IRCI (Indonesian Research Citation Index) </h2>
-        <br>
-
-        <div class="input-group">
-            <input class="form-control" id="search" name="search" placeholder="find what you need...!!!" style="font-size:17px; height:50px;">
-            <span class="input-group-btn"> <button type="button" class="glyphicon glyphicon-search" title="Search"> </button> </span>
-        </div>
-
-        <h4>
-            <input type="radio" name="all" value="all"> All &nbsp; &nbsp; &nbsp;
-            <input type="radio" name="name" value="name"> Name &nbsp; &nbsp; &nbsp;
-            <input type="radio" name="title" value="title"> Title &nbsp;
-        </h4>
-
+<div style="padding-top: 120px">
+    <div class="row">
+        <form class="form-horizontal">
+            <div class="col-md-6 col-md-offset-3" align="center">
+                <h1>Indonesia <span style="color: #57BF98;">Research Citation Index</span></h1>
+                <br>
+                <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                        <input type="text" class="form-control input-lg" style="border-radius: 0" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-lg" type="button" style="border-radius: 0;background-color: #57BF98; color: white; line-height:1.1;">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div><br>
+                <div class="form-group">
+                    <label class="radio-inline">
+                        <input type="radio" id="inlineRadio1" name="inlineRadioOptions" value="option1" checked="true"> all
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" id="inlineRadio2" name="inlineRadioOptions" value="option2"> name
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" id="inlineRadio3" name="inlineRadioOptions" value="option3"> title
+                    </label>
+                </div>
+            </div>
+        </form>
     </div>
-
-
-</div>
-
-<div class="row">
-
 </div>
