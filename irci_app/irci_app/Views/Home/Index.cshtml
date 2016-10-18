@@ -21,38 +21,40 @@
                 </div>*@
 
             @*<div align="center" class="col-lg-4">*@
-            <div class="row center-block">
-                <div class="input-group col-lg-4">
-                    <input type="text" class="form-control" placeholder="Search for...">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">
-                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                        </button>
-                    </span>
+            <form method="get" action="~/Home/SearchResult">
+                <div class="row center-block">
+                    <div class="input-group col-lg-4">
+                        <input name="searchStrTB" type="search " class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Go
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </span>
+                    </div>
+                </div><br />
+
+                <div class="row">
+                    <h4>
+                        <label class="radio-inline">
+                            <input checked type="radio" name="searchCatRB" id="inlineRadio1" value="0"> All
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="searchCatRB" id="inlineRadio2" value="1"> Name
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="searchCatRB" id="inlineRadio3" value="2"> Title
+                        </label>
+                    </h4>
                 </div>
-            </div><br />
+            </form>
 
-    @*<div class="col-lg-4">*@
-    <div class="row">
-        <h4>
-            <label class="radio-inline">
-                <input checked type="radio" name="searchCatRB" id="inlineRadio1" value="option1"> All
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="searchCatRB" id="inlineRadio2" value="option2"> Name
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="searchCatRB" id="inlineRadio3" value="option3"> Title
-            </label>
-        </h4>
+            @*<div class="row">
+                    <div class="bg-red col-md-4 col-md-offset-2">4</div>
+                    <div class="bg-red col-md-4">4</div>
+                </div>*@
+        </center>
+
     </div>
-    @*<div class="row">
-            <div class="bg-red col-md-4 col-md-offset-2">4</div>
-            <div class="bg-red col-md-4">4</div>
-        </div>*@
-    </center>
-
-</div>
 
 
 </div>

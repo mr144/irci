@@ -26,8 +26,19 @@ namespace irci_app.Controllers
 
             return View();
         }
-        public ActionResult SearchResult()
+        public ActionResult SearchResult(string srcTxt, int srcCat)
         {
+            //var movies = from m in db.Movies
+                         //select m;
+
+            if (!String.IsNullOrEmpty(srcTxt))
+            {
+
+                //movies = movies.Where(s => s.Title.Contains(searchString));
+            }
+
+            //return View(movies);
+            ViewBag.Message = srcTxt + " " + srcCat;
             return View();
         }
     }
