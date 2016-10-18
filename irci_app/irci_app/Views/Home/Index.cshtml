@@ -7,18 +7,52 @@
         <h2> IRCI (Indonesian Research Citation Index) </h2>
         <br>
 
-        <div class="input-group glyphicon-align-center">
-            <input class="form-control" id="search" name="search" placeholder="find what you need...!!!" style="font-size:17px; height:50px;">
-            <span class="input-group-btn"> <button type="button" class="glyphicon glyphicon-search" title="Search"> </button> </span>
-        </div>
+        @*<div class="input-group">
+                <input class="form-control" id="search" name="search" placeholder="find what you need...!!!" style="font-size:17px; height:50px;">
+                <span class="input-group-btn"> <button type="button" class="glyphicon glyphicon-search" title="Search"> </button> </span>
+            </div>*@
+        <center>
+            @*<div xclass="input-group ">
+                    <input type="text" class="form-control" />
+                    <span class="input-group-addon">
+                        <i class="fa fa-search"></i>
+                    </span>
+                    <input type="search" class="form-control" placeholder="search...">
+                </div>*@
 
+            @*<div align="center" class="col-lg-4">*@
+            <div class="row center-block">
+                <div class="input-group col-lg-4">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                    </span>
+                </div>
+            </div><br />
+
+    @*<div class="col-lg-4">*@
+    <div class="row">
         <h4>
-            <input type="radio" name="all" value="all"> All &nbsp; &nbsp; &nbsp;
-            <input type="radio" name="name" value="name"> Name &nbsp; &nbsp; &nbsp;
-            <input type="radio" name="title" value="title"> Title &nbsp;
+            <label class="radio-inline">
+                <input checked type="radio" name="searchCatRB" id="inlineRadio1" value="option1"> All
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="searchCatRB" id="inlineRadio2" value="option2"> Name
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="searchCatRB" id="inlineRadio3" value="option3"> Title
+            </label>
         </h4>
-
     </div>
+    @*<div class="row">
+            <div class="bg-red col-md-4 col-md-offset-2">4</div>
+            <div class="bg-red col-md-4">4</div>
+        </div>*@
+    </center>
+
+</div>
 
 
 </div>
@@ -26,3 +60,4 @@
 <div class="row">
 
 </div>
+
