@@ -26,5 +26,9 @@ namespace irci_app.Controllers
 
             return View();
         }
+        public ActionResult SearchResult()
+        {
+            return View();
+        }
     }
 }
