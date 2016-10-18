@@ -3,29 +3,21 @@
 }
 
 <div class="jumbotron">
-    <div class = "container" align="center">
+    <div class="container" align="center">
         <h2> IRCI (Indonesian Research Citation Index) </h2>
         <br>
-        <div class = "input-group">
-        <input type="text" class="form-control" id="" name="" placeholder="find what you need...!!!" style="font-size:17px; height:50px;"/>
-        <span class= "input-group-btn"> <button type="button" class="glyphicon glyphicon-search"> </button> </span>
+
+        <div class="input-group">
+            <input class="form-control" id="search" name="search" placeholder="find what you need...!!!" style="font-size:17px; height:50px;">
+            <span class="input-group-btn"> <button type="button" class="glyphicon glyphicon-search" title="Search"> </button> </span>
         </div>
 
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="input-group">
-                    <span class="input-group-addon">
-                        <input type="radio" aria-label="...">
-                        all
-                        <input type="radio" aria-label="...">
-                        name
-                        <input type="radio" aria-label="...">
-                        title
-                    </span>
-                   
-                </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
+        <h4>
+            <input type="radio" name="all" value="all"> All &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="name" value="name"> Name &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="title" value="title"> Title
+        </h4>
+
     </div>
 
 
