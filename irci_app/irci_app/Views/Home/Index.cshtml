@@ -2,64 +2,34 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <div class="container" align="center">
-        <h2> IRCI (Indonesian Research Citation Index) </h2>
-        <br>
-
-        @*<div class="input-group">
-                <input class="form-control" id="search" name="search" placeholder="find what you need...!!!" style="font-size:17px; height:50px;">
-                <span class="input-group-btn"> <button type="button" class="glyphicon glyphicon-search" title="Search"> </button> </span>
-            </div>*@
-        <center>
-            @*<div xclass="input-group ">
-                    <input type="text" class="form-control" />
-                    <span class="input-group-addon">
-                        <i class="fa fa-search"></i>
-                    </span>
-                    <input type="search" class="form-control" placeholder="search...">
-                </div>*@
-
-            @*<div align="center" class="col-lg-4">*@
-            <form method="get" action="~/Home/SearchResult">
-                <div class="row center-block">
-                    <div class="input-group col-lg-4">
-                        <input name="searchStrTB" type="search " class="form-control" placeholder="Search for...">
+<div style="padding-top: 120px">
+    <div class="row">
+        <form class="form-horizontal">
+            <div class="col-md-6 col-md-offset-3" align="center">
+                <h1>Indonesian <span style="color: #57BF98;">Research Citation Index</span></h1>
+                <br>
+                <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                        <input type="text" class="form-control input-lg" style="border-radius: 0" />
                         <span class="input-group-btn">
-                            <button class="btn btn-default" type="submit">Go
-                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            <button class="btn btn-lg" type="button" style="border-radius: 0;background-color: #57BF98; color: white; line-height:1.1;">
+                                <i class="glyphicon glyphicon-search"></i>
                             </button>
                         </span>
                     </div>
-                </div><br />
-
-                <div class="row">
-                    <h4>
-                        <label class="radio-inline">
-                            <input checked type="radio" name="searchCatRB" id="inlineRadio1" value="0"> All
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="searchCatRB" id="inlineRadio2" value="1"> Name
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="searchCatRB" id="inlineRadio3" value="2"> Title
-                        </label>
-                    </h4>
+                </div><br>
+                <div class="form-group">
+                    <label class="radio-inline">
+                        <input type="radio" id="inlineRadio1" name="inlineRadioOptions" value="option1" checked="true"> all
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" id="inlineRadio2" name="inlineRadioOptions" value="option2"> name
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" id="inlineRadio3" name="inlineRadioOptions" value="option3"> title
+                    </label>
                 </div>
-            </form>
-
-            @*<div class="row">
-                    <div class="bg-red col-md-4 col-md-offset-2">4</div>
-                    <div class="bg-red col-md-4">4</div>
-                </div>*@
-        </center>
-
+            </div>
+        </form>
     </div>
-
-
 </div>
-
-<div class="row">
-
-</div>
-
