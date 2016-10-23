@@ -9,10 +9,10 @@ namespace irci_app.Models
     {
         public String Name
         {
-            get
-            {
+            //get
+            //{
 
-            }
+            //}
         }
     }
 }
