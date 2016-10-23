@@ -7,12 +7,12 @@ namespace irci_app.Models
 {
     public class SearchResult
     {
-        public String Name
-        {
+        //public String Name
+        //{
             //get
             //{
 
             //}
-        }
+        //}
     }
 }
