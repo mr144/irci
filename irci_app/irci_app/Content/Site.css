@@ -106,7 +106,7 @@ textarea {
     right: 250px;
     width: 0;
     height: 100%;
-    margin-right: -250px;
+    margin-right: -180px;
     background: #68c3a3;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -200,8 +200,8 @@ textarea {
  
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 150px;
-        padding-right: 100px;
+        padding-left: 80px;
+        padding-right: 200px;
     }
     .fixed-brand{
         width: 250px;
@@ -211,7 +211,7 @@ textarea {
     }
  
     #sidebar-wrapper {
-        width: 250px;
+        width: 280px;
     }
  
     #wrapper.toggled #sidebar-wrapper {
@@ -233,21 +233,76 @@ textarea {
         -o-transition: all 0.5s ease;
         transition: all 0.5s ease;
     }
- 
-    #wrapper.toggled #page-content-wrapper {
-        position: relative;
-        margin-right: 0;
-        padding-left: 250px;
+
+    #table_jur{
+        margin-top:90px;
+        width:100%;
     }
-    #wrapper.toggled-2 #page-content-wrapper {
-        position: relative;
-        margin-right: 0;
-        margin-left: -200px;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-        width: auto;
- 
+
+    .tab_head_tr{
+        background: #f1f1f1;
     }
+
+    .tab_head_a{
+        padding:8px 8px;
+        text-align: left;
+        font-weight:normal;
+    }
+
+    .tab_head_b{
+        padding:8px 8px;
+        width: 100px;
+        vertical-align:middle;
+        box-sizing:border-box;
+        font-weight:normal;
+        text-align:right;
+    }
+
+    .tab_head_c{
+        padding: 8px 8px;
+        width: 100px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        font-weight: normal;
+        text-align:right;
+    }
+
+    .tab_body_r{
+        border-bottom: 1px solid #c4c4c4;
+    }
+
+    .tab_body_a{
+        padding: 8px 8px;
+        text-align:left;
+    }
+
+    .tab_body_b{
+        padding: 8px;8px;
+        vertical-align: middle;
+        text-align:right;
+    }
+
+    .tab_body_c{
+        padding: 8px;8px;
+        vertical-align: middle;
+        text-align:right;
+    }
+    
+    .table_info{
+        padding: 5px;
+    }
+
+    .table_btn{
+        float:right;
+    }
+
+    .btn_nav{
+        border-radius:0;
+        background-color:white;
+        border-color:black;
+        font-weight: normal;
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+ 
 }
