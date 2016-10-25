@@ -139,6 +139,7 @@ textarea {
 
 .id-photo{
     float: left;
+    margin-bottom:25px;
 }
 
 .id-profile{
@@ -288,34 +289,35 @@ textarea {
         text-align:right;
     }
     
-    .table_info{
-        padding: 5px;
-    }
-
-    .table_btn{
-        float:right;
-    }
-
-    .btn_nav{
-        border-radius:0;
-        background-color:white;
-        border-color:black;
-        font-weight: normal;
-        padding: 5px 5px;
-        font-size: 12px;
-    }
-
     #author-head-content{
         margin-right: 30%;
         margin-top: 20px;
     }
 
-    #author-result-content{
+    #author-result-content {
         margin-top: 50px;
+    }
+
+    .author-table{
+        font-size:16px;
+    }
+
+    .author-table-foot{
+        margin-top:-10px;
     }
 
     #author_tab_body{
        width:100%;
+    }
+
+    .result-btn{
+        float:right;
+        border:1px solid black;
+    }
+
+    .result-btn:hover{
+        background-color:cadetblue;
+        color:cornsilk;
     }
  
 }
