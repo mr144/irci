@@ -304,5 +304,18 @@ textarea {
         padding: 5px 5px;
         font-size: 12px;
     }
+
+    #author-head-content{
+        margin-right: 30%;
+        margin-top: 20px;
+    }
+
+    #author-result-content{
+        margin-top: 50px;
+    }
+
+    #author_tab_body{
+       width:100%;
+    }
  
 }

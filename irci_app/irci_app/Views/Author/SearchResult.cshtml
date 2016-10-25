@@ -1,17 +1,39 @@
 ﻿@{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
-    
+<!--search box-->
+<div id="author-head-content">
+    <div id="custom-search-input">
+        <div class="input-group col-md-12">
+            <input name="searchTxt" type="text" class="form-control input-lg" style="border-radius: 0" />
+            <span class="input-group-btn">
+                <button class="btn btn-lg" type="submit" style="border-radius: 0;background-color: #57BF98; color: white; line-height:1.1;">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </span>
+        </div>
     </div>
-</body>
-</html>
+</div>
+<!--result box-->
+<div id="author-result-content">
+    <table id="author-search-result">
+    <tbody id="author_tab_body">
+        <tr class="tab_body_r">
+            <td class="tab_body_a">
+                <a>Software Engineering</a>
+                <div class="tab_body_gray">S. Elfrianto</div>
+                <div class="tab_body_gray">Software Engineering Vol. 24</div>
+            </td>
+            <td class="tab_body_b">
+                <a>1000</a>
+            </td>
+            <td class="tab_body_c">
+                <a>1997</a>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
