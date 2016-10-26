@@ -2,95 +2,108 @@
     ViewBag.Title = "My Profile";
 }
 
-<!DOCTYPE html>
+<style>
+    .well {
+        background-color: #57BF98;
+        border-radius: 0px;
+    }
 
-<body>
-    <div id="page-content-wrapper">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
-                <li class="active">
-                    <a href="#"><span class="fa-stack fa-lg pull-right"><i class="fa fa-dashboard fa-stack-1x "></i></span> Dashboard</a>
-                    <ul class="nav-pills nav-stacked" style="list-style-type:none;">
-                        <li><a href="#">link1</a></li>
-                        <li><a href="#">link2</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span> Shortcut</a>
-                    <ul class="nav-pills nav-stacked" style="list-style-type:none;">
-                        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link1</a></li>
-                        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link2</a></li>
-
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-cloud-download fa-stack-1x "></i></span>Overview</a>
-                </li>
-            </ul>
-        </div><!-- /#sidebar-wrapper -->
-        <div class="container-fluid xyz">
-            <div id="wrapper">
-                <div class="head-row">
-                    <div class="id-photo">
-                        <img src="~/Img/profile.png" alt="Sample Photo" />
-                    </div>
-                    <div class="id-profile">
-                        <h1>Sholeh Elfrianto</h1>
-                        <p>Institut Teknologi Sepuluh November</p>
-                        <p>Surabaya, Jawa Timur, Indonesia</p>
-                    </div>
-                </div>
-                <!-- Page Content -->
-                <div id="table">
-                    <table class="table author-table">
-                        <thead id="tab_head">
-                            <tr class="tab_head_tr">
-                                <th class="tab_head_a" scope="col">
-                                    <span id="tab_head_a_1">
-                                        <a>Judul</a>
-                                    </span>
-                                    <span id="tab_head_a_2">(1-20)</span>
-                                </th>
-                                <th class="tab_head_b" scope="col">
-                                    <span>Dikutip oleh</span>
-                                </th>
-                                <th class="tab_head_c" scope="col">
-                                    <span>Tahun</span>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody id="tab_body">
-                            <tr class="tab_body_r">
-                                <td class="tab_body_a">
-                                    <a>Software Engineering</a>
-                                    <div class="tab_body_gray">S. Elfrianto</div>
-                                    <div class="tab_body_gray">Software Engineering Vol. 24</div>
-                                </td>
-                                <td class="tab_body_b">
-                                    <a>1000</a>
-                                </td>
-                                <td class="tab_body_c">
-                                    <a>1997</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="author-table-foot">
-                    <div class="result-info-text">
-                        <p>Menampilkan 1 dari xxx.xxx hasil</p>
-                    </div>
-                    <div class="result-info-btn">
-                        <button class="btn result-btn">1</button>
-                    </div>
-                </div>
+        .well h4 {
+            color: white;
+            text-align: center;
+        }
+</style>
+<div class="container-fluid">
+    <div class="col-md-8">
+        <div class="row" style="margin-top:10px;">
+            <div class="col-md-3">
+                <img src="~/Img/profile.png" alt="Sample Photo" />
+            </div>
+            <div class="col-md-9">
+                <h2>KH. Prof. Dr. M.Eng. Kanjeng Sholeh Elfrianto, S.ST, M.Kom</h2>
+                <hr>
+                <p>Institut Teknologi Sepuluh November</p>
+                <p>Surabaya, Jawa Timur, Indonesia</p>
             </div>
         </div>
-
+        <hr>
+        <div>
+            <table class="table table-stripped">
+                <thead>
+                    <tr>
+                        <th style="text-align: center" width="50%">Judul</th>
+                        <th style="text-align: center">Dikutip oleh</th>
+                        <th style="text-align: center">Tahun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h2>Title</h2>
+                            <a href="#">Author 1</a>, <a href="#">Author 2</a><br>
+                            <a href="#">ITS Publisher</a>
+                        </td>
+                        <td align="center">bla bla bla</td>
+                        <td align="center">2016</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Title</h2>
+                            <a href="#">Author 1</a>, <a href="#">Author 2</a><br>
+                            <a href="#">ITS Publisher</a>
+                        </td>
+                        <td align="center">bla bla bla</td>
+                        <td align="center">2016</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Title</h2>
+                            <a href="#">Author 1</a>, <a href="#">Author 2</a><br>
+                            <a href="#">ITS Publisher</a>
+                        </td>
+                        <td align="center">bla bla bla</td>
+                        <td align="center">2016</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Title</h2>
+                            <a href="#">Author 1</a>, <a href="#">Author 2</a><br>
+                            <a href="#">ITS Publisher</a>
+                        </td>
+                        <td align="center">bla bla bla</td>
+                        <td align="center">2016</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <!-- /#page-content-wrapper -->
+    <div class="col-md-4">
+        <div class="well">
+            <form class="form-horizontal" method="get" action="{{ url('/search_result') }}">
+                <div id="custom-search-input">
+                    <div class="input-group">
+                        <input type="text" class="form-control input" style="border-radius: 0" />
+                        <span class="input-group-btn">
+                            <button class="btn btn" type="button" style="border-radius: 0;background-color: #999; color: white">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class=" col-md-offset-1">
+                        <label class="radio-inline">
+                            <input type="radio" id="inlineRadio1" name="inlineRadioOptions" value="option1" checked="true"> all
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" id="inlineRadio2" name="inlineRadioOptions" value="option2"> name
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" id="inlineRadio3" name="inlineRadioOptions" value="option3"> title
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrapjs")
-</body>
+</div>
